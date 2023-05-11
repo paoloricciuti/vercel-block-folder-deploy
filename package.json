@@ -1,6 +1,6 @@
 {
   "name": "vercel-block-folder-deploy",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
   "main": "./dist/index.cjs",
   "type": "module",
@@ -10,7 +10,7 @@
     "build:watch": "pnpm run build --watch",
     "test": "vitest",
     "test:watch": "vitest --watch",
-	"publish": "pnpm run build && changeset publish"
+    "publish": "pnpm run build && changeset publish"
   },
   "keywords": [
     "vercel",
