@@ -21,13 +21,13 @@ export function check({
   const every_file_in_folders =
     folders.length > 0 &&
     !file_name_list.every((file) =>
-      folders.some((folder) => file.startsWith(`/${folder}/`))
+      folders.some((folder) => file.startsWith(`${folder}/`))
     );
 
   const some_file_not_in_not_folders =
     not_folders.length > 0 &&
     file_name_list.some((file) =>
-      not_folders.some((folder) => file.startsWith(`/${folder}/`))
+      not_folders.some((folder) => file.startsWith(`${folder}/`))
     );
 
   if (every_file_in_folders || some_file_not_in_not_folders) {
