@@ -7,11 +7,17 @@
   "bin": "./dist/index.cjs",
   "scripts": {
     "build": "tsup index.ts",
-    "watch": "pnpm run build --watch",
-	"test": "vitest",
-	"test:watch": "vitest --watch"
+    "build:watch": "pnpm run build --watch",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+	"publish": "pnpm run build && changeset publish"
   },
-  "keywords": ["vercel","cli","skip","build"],
+  "keywords": [
+    "vercel",
+    "cli",
+    "skip",
+    "build"
+  ],
   "author": "Paolo Ricciuti",
   "license": "MIT",
   "devDependencies": {
@@ -20,6 +26,9 @@
     "vitest": "^0.31.0"
   },
   "files": [
-	"./dist/index.cjs"
-  ]
+    "./dist/index.cjs"
+  ],
+  "dependencies": {
+    "@changesets/cli": "^2.26.1"
+  }
 }
