@@ -1,0 +1,25 @@
+{
+  "name": "vercel-block-folder-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.cjs",
+  "type": "module",
+  "bin": "./dist/index.cjs",
+  "scripts": {
+    "build": "tsup index.ts",
+    "watch": "pnpm run build --watch",
+	"test": "vitest",
+	"test:watch": "vitest --watch"
+  },
+  "keywords": ["vercel","cli","skip","build"],
+  "author": "Paolo Ricciuti",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.1.1",
+    "tsup": "^6.7.0",
+    "vitest": "^0.31.0"
+  },
+  "files": [
+	"./dist/index.cjs"
+  ]
+}
