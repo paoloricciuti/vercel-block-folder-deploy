@@ -19,7 +19,7 @@ if (theres_a_not) {
 
 // get all file names changed in last commit
 const file_name_list = child_process
-  .execSync("git diff --name-only HEAD~1")
+  .execSync("git diff --name-only HEAD^ HEAD")
   .toString()
   .trim()
   .split("\n");
