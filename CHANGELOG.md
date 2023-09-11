@@ -1,5 +1,11 @@
 # vercel-block-folder-deploy
 
+## 1.1.1
+
+### Patch Changes
+
+- 14c41dc: better git
+
 ## 1.1.0
 
 ### Minor Changes
